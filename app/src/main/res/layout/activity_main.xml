@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:columnCount="1"
+    tools:context=".MainActivity"
+    android:background="@color/bg">
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="Tic Tac Toe"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="60dp"
+        />
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#FFC2D0"
+        />
+
+    <TextView
+        android:id="@+id/whoPlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/resetBtn"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/startgame_btn"
+        app:backgroundTint ="@null"
+        />
+
+    <Button
+        android:id="@+id/exitBtn"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Exit"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/exit_btn"
+        app:backgroundTint ="@null"/>
+
+
+
+
+</GridLayout>

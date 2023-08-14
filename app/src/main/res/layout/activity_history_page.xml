@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="1"
+    android:padding="20dp"
+    android:background="@color/bg"
+    tools:context=".HistoryPage">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="History"
+        android:textSize="50dp"
+        android:textFontWeight="@integer/material_motion_duration_long_1"
+        android:textColor="@color/black"
+        android:background="@drawable/header_his"
+        />
+
+
+    <GridLayout
+        android:layout_width="360dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/historyshow_header"
+        android:columnCount="3">
+
+        <TextView
+            android:layout_width="194dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Win or Tie"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <View
+            android:layout_width="12dp"
+            android:layout_height="20dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Type"
+            android:textSize="20dp"
+            android:textColor="@color/black"/>
+
+    </GridLayout>
+
+    <ScrollView
+        android:layout_width="360dp"
+        android:layout_height="500dp"
+        android:background="@drawable/historyshow"
+        android:layout_gravity="center_horizontal"
+        >
+            <GridLayout
+                android:id="@+id/historyShow"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:columnCount="3">
+
+                <TextView
+                    android:id="@+id/winOrTie"
+                    android:layout_width="194dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <View
+                    android:layout_width="14dp"
+                    android:layout_height="match_parent"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/gameType"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"/>
+            </GridLayout>
+    </ScrollView>
+
+
+    <Button
+        app:backgroundTint="@null"
+        android:id="@+id/deleteHistorytBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Delete history"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/history_btn"
+        />
+    <Button
+        app:backgroundTint="@null"
+        android:id="@+id/goBackBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Back"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/exit_btn"/>
+
+</GridLayout>

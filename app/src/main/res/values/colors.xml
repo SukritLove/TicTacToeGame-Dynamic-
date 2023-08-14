@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="boardBackground">#F6EFD2</color>
+    <color name="buttonTextColor">#7E7A87</color>
+    <color name="Restart">#FF9D6E</color>
+    <color name="exit">#FF81A0</color>
+    <color name="exit_click">#FF678C</color>
+    <color name="start">#FF8F57</color>
+    <color name="start_click">#FFAB82</color>
+    <color name="plus">#FFB85F</color>
+    <color name="minus">#FFC879</color>
+    <color name="bg">#FFFFE5</color>
+    <color name="historyButton">#FFD64D</color>
+    <color name="historyButton_click">#FFE17D</color>
+    <color name="history_header">#B0C4DE</color>
+    <color name="history_data">#FFFFE5</color>
+</resources>
